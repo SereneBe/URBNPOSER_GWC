@@ -1,0 +1,36 @@
+
+Body{
+    background-image: url("https://lh3.googleusercontent.com/4KQDI_fdhq0qDewC_g2zlnj3DbACPWrLoEKQFLcOHjkTsD5fhJuhbhq1p9FdHFG6OLwUL0H2iRfjyJbWVNAovwicpdWPFu2H0s35u4TObTLOaAO260xtT27jQrVVDpanrBwFIk5uL04");
+    background-color:lightgray;
+}
+h1 {
+    font-size: 70px;
+}
+h1 {
+    color: violet;
+}
+h2 {
+    color: white;
+}
+    img {
+        max-width: 100%;
+        height: auto;
+}
+
+button{
+  text-align: center;
+  font-size: 30px;
+  color: black
+}
+
+#signup{
+  text-align: center;
+}
+
+#login{
+  text-align: center;
+}
+
+#container{
+  text-align: center;
+}
