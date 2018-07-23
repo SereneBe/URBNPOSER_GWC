@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <title>
+            Login        </title>
+
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link rel="shortcut icon" href="https://account.genndi.com/assets/favicon.ico" />
+        <link href="//fonts.googleapis.com/css?family=Roboto:400,300,500,700,300italic,400italic,500italic,700italic|Indie+Flower|Just+Another+Hand" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css">
+        <link rel="stylesheet" type="text/css" href="https://account.genndi.com/assets/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="https://account.genndi.com/assets/css/base.css">
+
+
+
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MTGCFQ6');</script>
+    <!-- End Google Tag Manager -->
+    </head>
+    <div id="js-page-builder-container"></div>
+    <body class="no-sticky-bar">
+        <div class="wrapper  responsive ">
+            <header class="top_bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 top-bar">
+                            <div class="row">
+                                <div class="col-xs-7 text-left">
+                                    <div class="partner_sites row">
+                                        <div class="col-xs-5">
+                                            <div class="wj_site p_site text-left">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-5 text-right">
+                                    <div class="actionbar_menu">
+                                                                            <div class="responsive_menu">
+                                            <a href="#" class="responsive_icon">
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </a>
+
+
+                                                                                            </ul>
+                                                                            </div>
+                                                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+
+            <!-- Menu section -->
+
+            <!-- Body section -->
+                <div class="container content_container login">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 col-xs-12 col-xs-offset-0">
+                <form name="login_form" id="login_form" method="post" action="https://account.genndi.com/login" class="form_login">
+                    <input type="hidden" name="_token" value="s3fghzM0KP9JLd93SW6iM7YL9MZEFDJCC1kv3WPj">
+                    <div class="white_block">
+                    <article>
+                    <header class="clearfix">
+                        <h4 class="pull-left">Sign in</h4>
+                    </header>
+                    <div class="block-inner">
+                        <div class="form-group">
+                            <label>
+                                Username
+                            </label>
+                            <input type="text" name="username" class="required form-control" value="" placeholder="Enter your username...">
+                        </div>
+                        <div class="form-group w_margin">
+                            <label>
+                                Password
+                            </label>
+                            <input name="password" type="password" class="required form-control" style="" placeholder="Enter your password...">
+                        </div>
+                        <div id="container">
+                        <a href="modelagency.html"><button id="signin" onclick="addImage()">Sign In</button></a>
+
+                    </div>
+                    </article>
+                    </div>
+                    <a href="#" class="pull-left">
+                        Create a new account
+                    </a>
+                    <a data-toggle="modal" id="reset_password" href="#resetpw-modal" class="pull-right">
+                        Forgot your password?
+                    </a>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<div class="new_bs3_modal modal fade" id="resetpw-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title" id="myModalLabel">Forgot your password?</h3>
+            </div>
+            <div class="modal-body">
+                <div class="text-center modal_intro_block">
+                    <i class="gd-ico-door-lock" id="iconStart"></i>
+                    <i class="gd-ico-mail" id="iconSuccess" style="display:none;"></i>
+                    <h4 id="messageStart">Don't worry, we can send it again!</h4>
+                    <h4 id="messageSuccess" style="display:none;">An email with a password reset link has just been sent to you!</h4>
+                </div>
+                <div class="form-group" id="emailInputFormGroup">
+                    <label>Email address</label>
+                    <input type="text" class="form-control" placeholder="Enter your email here..." id="resetPasswordEmail">
+                </div>
+                <div class="clearfx"></div>
+                <button class="btn btn-black_new btn-large btn-block text-uppercase" id="resetPasswordBtn">
+                    <img src="https://d3kf9uqclka5mu.cloudfront.net/images/loading.gif" class="js_processing_spinning_wheel" width="18" style="display:none;margin-right: 5px;">
+                    <span class="btn-title" data-original-title="Send my password">Send my password</span>
+                    <span id="countdown-wrapper" class="circle-outline" style="display: none;">
+                        <span id="countdown">3</span>
+                    </span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div class="full-width-footer">
+                <div class="container">
+                    <div class="footer-meta">
+                        Copyright &copy; UrbnPoser 2018
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- JS SECTION -->
+            <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.1/icheck.min.js"></script>
+            <script type="text/javascript" src="https://account.genndi.com/assets/js/global.js"></script>
+
+
+
+
+            <!-- START BASE JS -->
+            <script>
+	// Setup a namespace for functions and config that need to be global.
+	window.gdCoreSdk = {};
+
+    function showAlert(element) {
+        $(element).removeClass('sticky_close');
+
+        var sticky_edit_seconds = 5;
+        $(element).find('.js_remaining_time').text(sticky_edit_seconds);
+        stickyCountdown = setInterval(function () {
+            --sticky_edit_seconds;
+            $(element).find('.js_remaining_time').text(sticky_edit_seconds);
+            if (sticky_edit_seconds == 0) {
+                clearInterval(stickyCountdown);
+                $(element).addClass("sticky_close");
+            }
+        }, 1000);
+    }
+
+    $(document).ready(function(){
+
+        $('body').tooltip({
+            selector: '[data-toggle="tooltip"]',
+            container: 'body',
+        });
+
+        $('body').on('click', '[data-toggle="tooltip"]', function(){
+            $(this).tooltip('hide');
+        });
+
+        $('body').tooltip({
+            selector: '[data-toggle="tooltip-error"]',
+            container: 'body',
+            template: '<div class="tooltip tooltip-error"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'
+        });
+
+        // Close all popovers when you click outside
+        $(document).on('click', function (e) {
+            $('[data-toggle="popover"],[data-original-title]').each(function () {
+                //the 'is' for buttons that trigger popups
+                //the 'has' for icons within a button that triggers a popup
+                if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+                    (($(this).popover('hide').data('bs.popover')||{}).inState||{}).click = false  // fix for BS 3.3.6
+                }
+            });
+        });
+
+
+        var mobileHover = function () {
+            $('*').on('touchstart', function () {
+                $(this).tooltip('show');
+            }).on('touchend', function () {
+                $(this).tooltip('hide');
+            });
+        };
+
+        mobileHover();
+
+                    $(document).on("click",".responsive_icon",function(){
+                $(this).parent(".responsive_menu").toggleClass("open")
+            });
+            });
+
+</script>
+            <!-- END BASE JS -->
+
+
+<script>
+var showError = function(btn) {
+    var seconds = 3;
+    btn.find('#countdown-wrapper').show();
+    btn.prop('disabled', true).addClass('btn-error');
+    var timer = setInterval(function () {
+        btn.find('#countdown').text(--seconds);
+        if (seconds == 0) {
+            clearInterval(timer);
+            btn.removeClass('btn-error').prop('disabled', false).removeClass('disabled');
+            btn.find("#countdown-wrapper").hide();
+            btn.find('.btn-title').text(btn.find('.btn-title').data('original-title'));
+        }
+    }, 1000);
+}
+
+
+$('#resetPasswordBtn').on('click', function() {
+    var $resetPasswordBtn = $(this);
+    var email = $("#resetPasswordEmail").val();
+    $('.js_processing_spinning_wheel').show();
+    $resetPasswordBtn.prop('disabled', true).addClass('disabled');
+    $resetPasswordBtn.find('span.btn-title').text('Processing...');
+
+    var url = "https://account.genndi.com/resetPassword";
+    var data = {
+        email: email,
+    }
+    var xhr = $.ajax({
+        type: "POST",
+        cache: false,
+        url: url,
+        data: data,
+        beforeSend: function(request) {
+            return request.setRequestHeader('X-CSRF-Token', "s3fghzM0KP9JLd93SW6iM7YL9MZEFDJCC1kv3WPj");s
+        }
+    });
+    xhr.done(function() {
+        $resetPasswordBtn.hide();
+        $('#emailInputFormGroup').hide();
+        $('#iconStart').hide();
+        $('#messageStart').hide();
+        $('#iconSuccess').fadeIn();
+        $('#messageSuccess').fadeIn();
+        $('.js_processing_spinning_wheel').hide();
+        $resetPasswordBtn.prop('disabled', false).removeClass('disabled');
+        $resetPasswordBtn.find('span.btn-title').text($resetPasswordBtn.find('span.btn-title').attr('data-original-title'));
+    });
+
+    xhr.fail(function() {
+        $('.js_processing_spinning_wheel').hide();
+        $resetPasswordBtn.find('span.btn-title').text("Error");
+        showError($resetPasswordBtn);
+    });
+});
+</script>
+
+
+
+                    </div>
+
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTGCFQ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    </body>
+</html>
