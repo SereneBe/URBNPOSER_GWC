@@ -1,0 +1,23 @@
+Body{
+  background-color: violet
+}
+
+h2{
+  font-size: 35px;
+}
+
+#model{
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+}
+
+#agency{
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+}
